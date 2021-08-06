@@ -239,6 +239,7 @@
     </Compile>
     <Compile Include="Models\Media\AnyFile.cs" />
     <Compile Include="Models\Media\ImageFile.cs" />
+    <Compile Include="Models\Media\PdfFile.cs" />
     <Compile Include="Models\Media\SvgFile.cs" />
     <Compile Include="Models\Pages\StartPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -246,11 +247,36 @@
   <ItemGroup>
     <Folder Include="Models\Blocks\" />
     <Folder Include="Models\Properties\" />
-    <Folder Include="Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="modules\_protected\EPiServer.Search.Cms\IndexContent.aspx" />
     <Content Include="Static\css\editor.css" />
+    <Content Include="Static\gfx\carouselbackground.png" />
+    <Content Include="Static\gfx\contact.jpg" />
+    <Content Include="Static\gfx\exampelspan4.png" />
+    <Content Include="Static\gfx\experts.png" />
+    <Content Include="Static\gfx\fallows-media-wide.jpg" />
+    <Content Include="Static\gfx\leader.png" />
+    <Content Include="Static\gfx\leader2.png" />
+    <Content Include="Static\gfx\logotype.png" />
+    <Content Include="Static\gfx\meet.jpg" />
+    <Content Include="Static\gfx\New_FDT_Press_Contact_.JPG" />
+    <Content Include="Static\gfx\page-type-thumbnail-article.png" />
+    <Content Include="Static\gfx\page-type-thumbnail-contact.png" />
+    <Content Include="Static\gfx\page-type-thumbnail-product.png" />
+    <Content Include="Static\gfx\page-type-thumbnail-standard.png" />
+    <Content Include="Static\gfx\page-type-thumbnail.png" />
+    <Content Include="Static\gfx\pdf.png" />
+    <Content Include="Static\gfx\person.png" />
+    <Content Include="Static\gfx\plan.jpg" />
+    <Content Include="Static\gfx\play.png" />
+    <Content Include="Static\gfx\playInactive.png" />
+    <Content Include="Static\gfx\productLandingv2.png" />
+    <Content Include="Static\gfx\searchbutton.png" />
+    <Content Include="Static\gfx\searchbuttonsmall.png" />
+    <Content Include="Static\gfx\track.jpg" />
+    <Content Include="Static\js\bootstrap.js" />
+    <Content Include="Static\js\jquery.js" />
     <Content Include="Views\Web.config" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -269,6 +295,7 @@
     <Content Include="modules\_protected\CMS\CMS.zip" />
     <None Include="packages.config" />
     <Content Include="Views\StartPage\Index.cshtml" />
+    <Content Include="Views\Shared\PdfFile.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
