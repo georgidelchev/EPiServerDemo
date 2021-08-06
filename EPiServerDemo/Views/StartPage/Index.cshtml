@@ -2,8 +2,11 @@
 
 @model EPiServerDemo.Models.Pages.StartPage
 
+<h1>
+    @(this.Model.Heading ?? this.Model.Name)
+</h1>
+
 <div>
-    @Html.PropertyFor(m => m.Heading)
     @Html.PropertyFor(m => m.MainBody)
     @Html.PropertyFor(m => m.MainContentArea)
 </div>
