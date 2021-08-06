@@ -32,10 +32,10 @@ namespace EPiServerDemo.Models.Pages
 
         [CultureSpecific]
         [Display(
-            Name = "Main body",
+            Name = "Main Content Area",
             Description = "The main content area contains an ordered collection to content references, for example blocks, media assets, and pages.",
             GroupName = SystemTabNames.Content,
             Order = 30)]
-        public virtual XhtmlString MainContentArea { get; set; }
+        public virtual ContentArea MainContentArea { get; set; }
     }
 }
