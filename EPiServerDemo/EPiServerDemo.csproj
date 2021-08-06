@@ -232,6 +232,7 @@
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ItemGroup>
     <Compile Include="Business\Constants\SiteGroupNames.cs" />
+    <Compile Include="Business\Constants\SiteTabNames.cs" />
     <Compile Include="Business\Initialization\RegisterAdminInitializationModule.cs" />
     <Compile Include="Controllers\StartPageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -241,6 +242,7 @@
     <Compile Include="Models\Media\ImageFile.cs" />
     <Compile Include="Models\Media\PdfFile.cs" />
     <Compile Include="Models\Media\SvgFile.cs" />
+    <Compile Include="Models\Pages\SitePageData.cs" />
     <Compile Include="Models\Pages\StartPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

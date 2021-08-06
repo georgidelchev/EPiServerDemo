@@ -13,6 +13,6 @@ namespace EPiServerDemo.Models.Media
     public class PdfFile : MediaData
     {
         [Display(Name = "Render preview image")]
-        public bool RenderPreviewImage { get; set; }
+        public virtual bool RenderPreviewImage { get; set; }
     }
 }
