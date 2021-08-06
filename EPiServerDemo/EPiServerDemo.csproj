@@ -244,6 +244,8 @@
     <Compile Include="Models\Media\SvgFile.cs" />
     <Compile Include="Models\Pages\SitePageData.cs" />
     <Compile Include="Models\Pages\StartPage.cs" />
+    <Compile Include="Models\ViewModels\IPageViewModel.cs" />
+    <Compile Include="Models\ViewModels\PageViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
