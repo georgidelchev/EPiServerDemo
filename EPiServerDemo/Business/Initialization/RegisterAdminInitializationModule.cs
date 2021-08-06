@@ -22,6 +22,7 @@ namespace EPiServerDemo.Business.Initialization
         public void Initialize(InitializationEngine context)
         {
             string enabledString = ConfigurationManager.AppSettings["alloy:RegisterAdmin"];
+
             bool enabled;
             if (bool.TryParse(enabledString, out enabled))
             {
@@ -56,28 +57,34 @@ namespace EPiServerDemo.Business.Initialization
                         .Get(ContentReference.RootPage)
                         .CreateWritableClone() as IContentSecurityDescriptor;
 
-                    var adminEntries = permissions.Entries.Where(
-                        entry => entry.Name.Contains("Admin")).ToArray();
+                    var adminEntries = permissions
+                        .Entries
+                        .Where(entry => entry.Name.Contains("Admin"))
+                        .ToArray();
+
                     foreach (var entry in adminEntries)
                     {
                         permissions.RemoveEntry(entry);
                     }
-                    permissions.AddEntry(new AccessControlEntry(virtualRoleName, AccessLevel.FullAccess));
 
+                    permissions.AddEntry(new AccessControlEntry(virtualRoleName, AccessLevel.FullAccess));
                     security.Save(ContentReference.RootPage, permissions, SecuritySaveType.Replace);
 
                     permissions = security
                         .Get(ContentReference.WasteBasket)
                         .CreateWritableClone() as IContentSecurityDescriptor;
 
-                    adminEntries = permissions.Entries.Where(
-                        entry => entry.Name.Contains("Admin")).ToArray();
+                    adminEntries = permissions
+                        .Entries
+                        .Where(entry => entry.Name.Contains("Admin"))
+                        .ToArray();
+
                     foreach (var entry in adminEntries)
                     {
                         permissions.RemoveEntry(entry);
                     }
-                    permissions.AddEntry(new AccessControlEntry(virtualRoleName, AccessLevel.FullAccess));
 
+                    permissions.AddEntry(new AccessControlEntry(virtualRoleName, AccessLevel.FullAccess));
                     security.Save(ContentReference.WasteBasket, permissions, SecuritySaveType.Replace);
 
                     #endregion
@@ -85,6 +92,8 @@ namespace EPiServerDemo.Business.Initialization
             }
         }
 
-        public void Uninitialize(InitializationEngine context) { }
+        public void Uninitialize(InitializationEngine context)
+        {
+        }
     }
 }
