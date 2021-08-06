@@ -1,22 +1,7 @@
 ﻿/* Styles used by the TinyMCE editor */
 
-p.introduction {
-    ChangeElementType: true; /*This allows the change of element type, i.e. h1 to p*/
-    EditMenuName: Introduction;
-}
-
-.alert-info {
-    EditMenuName: Alert Box;
-}
-
-h2 {
-    EditMenuTitle: Headings;
-    EditMenuName: Header 2;
-}
-
-h3 {
-    EditMenuName: Header 3;
-}
+h2 {EditMenuName:Header 2;}
+h3 {EditMenuName:Header 3;}
 
 /*Block Preview*/
 .alert-info {
