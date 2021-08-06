@@ -4,15 +4,14 @@ using EPiServerDemo.Models.Pages;
 
 namespace EPiServerDemo.Models.ViewModels
 {
-    public interface IPageViewModel<T>
-        where T : SitePageData
+    public interface IPageViewModel<out T>
     {
-        T CurrentPage { get; set; }
+        T CurrentPage { get; }
 
-        StartPage StartPage { get; set; }
+        StartPage StartPage { get; }
 
-        IEnumerable<SitePageData> MenuPages { get; set; }
+        IEnumerable<SitePageData> MenuPages { get; }
 
-        IContent Section { get; set; }
+        IContent Section { get; }
     }
 }

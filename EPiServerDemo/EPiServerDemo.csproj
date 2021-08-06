@@ -135,6 +135,9 @@
     <Reference Include="EPiServer.Web.WebControls, Version=11.20.7.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\packages\EPiServer.CMS.AspNet.11.20.7\lib\net461\EPiServer.Web.WebControls.dll</HintPath>
     </Reference>
+    <Reference Include="Geta.Epi.FontThumbnail, Version=1.2.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Geta.Epi.FontThumbnail.1.2.4\lib\net461\Geta.Epi.FontThumbnail.dll</HintPath>
+    </Reference>
     <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
     </Reference>
@@ -233,7 +236,15 @@
   <ItemGroup>
     <Compile Include="Business\Constants\SiteGroupNames.cs" />
     <Compile Include="Business\Constants\SiteTabNames.cs" />
+    <Compile Include="Business\DependencyResolvers\StructureMapDependencyResolver.cs" />
+    <Compile Include="Business\ExtensionMethods\ContentExtensions.cs" />
+    <Compile Include="Business\ExtensionMethods\HtmlHelperExtensions.cs" />
+    <Compile Include="Business\ExtensionMethods\LayoutExtensionMethods.cs" />
+    <Compile Include="Business\ExtensionMethods\MiscExtensions.cs" />
+    <Compile Include="Business\ExtensionMethods\SectionExtensionMethods.cs" />
     <Compile Include="Business\Initialization\RegisterAdminInitializationModule.cs" />
+    <Compile Include="Business\Initialization\RegisterDependencyResolverInitializationModule.cs" />
+    <Compile Include="Controllers\PageControllerBase.cs" />
     <Compile Include="Controllers\StartPageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -300,6 +311,8 @@
     <None Include="packages.config" />
     <Content Include="Views\StartPage\Index.cshtml" />
     <Content Include="Views\Shared\PdfFile.cshtml" />
+    <Content Include="Views\Shared\Layouts\_Root.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
