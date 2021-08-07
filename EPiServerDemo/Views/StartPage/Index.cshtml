@@ -8,6 +8,8 @@
 <div>
     @this.Html.PropertyFor(m => m.CurrentPage.MainBody)
 </div>
+
 <div>
-    @this.Html.PropertyFor(m => m.CurrentPage.MainContentArea)
+    @Html.PropertyFor(m => m.CurrentPage.MainContentArea,
+        new { CssClass = "row equal-height" })
 </div>

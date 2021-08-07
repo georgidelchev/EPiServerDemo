@@ -3,6 +3,7 @@ using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 using EPiServerDemo.Business.Constants;
+using EPiServerDemo.Models.Media;
 using Geta.Epi.FontThumbnail;
 
 namespace EPiServerDemo.Models.Pages
@@ -38,6 +39,8 @@ namespace EPiServerDemo.Models.Pages
             Description = "The main content area contains an ordered collection to content references, for example blocks, media assets, and pages.",
             GroupName = SystemTabNames.Content,
             Order = 30)]
+        [AllowedTypes(typeof(StandardPage), typeof(BlockData),
+            typeof(ImageData), typeof(ContentFolder), typeof(PdfFile))]
         public virtual ContentArea MainContentArea { get; set; }
 
         [CultureSpecific]
