@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 using EPiServer.Shell.ObjectEditing;
@@ -25,7 +26,7 @@ namespace EPiServerDemo.Models.Pages
 
         [Display(
             Name = "Color theme",
-            GroupName = SystemTabNames.Content, 
+            GroupName = SystemTabNames.Content,
             Order = 310)]
         [SelectOne(SelectionFactoryType = typeof(ThemeSelectionFactory))]
         protected virtual string Theme { get; set; }
@@ -33,9 +34,16 @@ namespace EPiServerDemo.Models.Pages
         [CultureSpecific]
         [Display(
             Name = "Unique selling points",
-            GroupName = SystemTabNames.Content, 
+            GroupName = SystemTabNames.Content,
             Order = 320)]
         [Required]
         public virtual IList<string> UniqueSellingPoints { get; set; }
+
+        [CultureSpecific]
+        [Display(
+            Name = "Content area",
+            GroupName = SystemTabNames.Content,
+            Order = 330)]
+        public virtual ContentArea ContentArea { get; set; }
     }
 }
