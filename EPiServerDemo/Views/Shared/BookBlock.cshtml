@@ -1,0 +1,15 @@
+﻿@using EPiServer.Web.Mvc.Html
+
+@model EPiServerDemo.Models.Blocks.BookBlock
+
+<div>
+    @this.Html.PropertyFor(m => m.Heading)
+</div>
+<div>
+    @this.Html.PropertyFor(m => m.Description)
+</div>
+<div>
+    <a href="@this.Html.PropertyFor(m => m.Url)">
+        <img src="@this.Html.PropertyFor(m => m.Image.Path)" width="100" height="100" />
+    </a>
+</div>
