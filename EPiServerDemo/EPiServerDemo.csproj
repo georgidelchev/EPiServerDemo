@@ -245,11 +245,13 @@
     <Compile Include="Business\Initialization\RegisterAdminInitializationModule.cs" />
     <Compile Include="Business\Initialization\RegisterDependencyResolverInitializationModule.cs" />
     <Compile Include="Business\SelectionFactories\ThemeSelectionFactory.cs" />
+    <Compile Include="Controllers\ContentFolderController.cs" />
     <Compile Include="Controllers\PageControllerBase.cs" />
     <Compile Include="Controllers\StandardPagePartialController.cs" />
     <Compile Include="Controllers\ProductPagePartialController.cs" />
     <Compile Include="Controllers\ProductPageController.cs" />
     <Compile Include="Controllers\StandardPageController.cs" />
+    <Compile Include="Controllers\StartPagePartialController.cs" />
     <Compile Include="Controllers\StartPageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -263,13 +265,13 @@
     <Compile Include="Models\Pages\SitePageData.cs" />
     <Compile Include="Models\Pages\StandardPage.cs" />
     <Compile Include="Models\Pages\StartPage.cs" />
+    <Compile Include="Models\ViewModels\ContentFolderViewModel.cs" />
     <Compile Include="Models\ViewModels\IPageViewModel.cs" />
     <Compile Include="Models\ViewModels\PageViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\Properties\" />
-    <Folder Include="Views\Blocks\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="modules\_protected\EPiServer.Search.Cms\IndexContent.aspx" />
@@ -333,6 +335,8 @@
     <Content Include="Views\ProductPagePartial\Index.cshtml" />
     <Content Include="Views\Shared\ImageFile.cshtml" />
     <Content Include="Views\StandardPagePartial\Index.cshtml" />
+    <Content Include="Views\ContentFolder\Index.cshtml" />
+    <Content Include="Views\StartPagePartial\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -16,6 +16,7 @@ namespace EPiServerDemo.Models.Pages
         Description = "Use this for software products that you sells.",
         GroupName = SiteGroupNames.Specialized)]
     [ThumbnailIcon(FontAwesome.ShoppingBag)]
+    [AvailableContentTypes(IncludeOn = new []{typeof(StandardPage)})]
     public class ProductPage : StandardPage
     {
         public override void SetDefaultValues(ContentType contentType)

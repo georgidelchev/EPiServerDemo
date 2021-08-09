@@ -14,6 +14,7 @@ namespace EPiServerDemo.Models.Pages
         Description = "The home page for a website with an area for blocks and partial pages.",
         GroupName = SiteGroupNames.Specialized,
         Order = 10)]
+    [AvailableContentTypes(Include = new[] { typeof(ProductPage), typeof(StandardPage) })]
     [ThumbnailIcon(FontAwesome.Home)]
     public class StartPage : SitePageData
     {
@@ -28,8 +29,8 @@ namespace EPiServerDemo.Models.Pages
         [CultureSpecific]
         [Display(
             Name = "Main body",
-            Description = "The main body uses the XHTML-editor so you can insert, for example text, images, and tables.", 
-            GroupName = SystemTabNames.Content, 
+            Description = "The main body uses the XHTML-editor so you can insert, for example text, images, and tables.",
+            GroupName = SystemTabNames.Content,
             Order = 20)]
         public virtual XhtmlString MainBody { get; set; }
 
@@ -39,15 +40,13 @@ namespace EPiServerDemo.Models.Pages
             Description = "The main content area contains an ordered collection to content references, for example blocks, media assets, and pages.",
             GroupName = SystemTabNames.Content,
             Order = 30)]
-        [AllowedTypes(typeof(StandardPage), typeof(BlockData),
-            typeof(ImageData), typeof(ContentFolder), typeof(PdfFile))]
         public virtual ContentArea MainContentArea { get; set; }
 
         [CultureSpecific]
         [Display(
             Name = "Footer text",
             Description = "The footer text will be shown at the bottom of every page.",
-            GroupName = SiteTabNames.SiteSettings, 
+            GroupName = SiteTabNames.SiteSettings,
             Order = 10)]
         public virtual string FooterText { get; set; }
     }

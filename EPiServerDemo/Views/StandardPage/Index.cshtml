@@ -1,6 +1,7 @@
 ﻿@using EPiServer.Web.Mvc.Html
 
 @model EPiServerDemo.Models.ViewModels.IPageViewModel<EPiServerDemo.Models.Pages.StandardPage>
+
 <div class="text-center">
     <h1 @Html.EditAttributes(m => m.CurrentPage.MetaTitle)>
         @(Model.CurrentPage.MetaTitle ?? Model.CurrentPage.Name)

@@ -10,6 +10,6 @@
         @Html.PropertyFor(x => x.CurrentPage.MainBody)
     </div>
     <div class="span8 clearfix">
-        @Html.PropertyFor(x => x.CurrentPage.ContentArea)
+        @Html.PropertyFor(x => x.CurrentPage.ContentArea, new { CssClass = "row equal-height" })
     </div>
 </div>

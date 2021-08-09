@@ -14,6 +14,7 @@ namespace EPiServerDemo.Models.Pages
         GroupName = SiteGroupNames.Common,
         Order = 150)]
     [ThumbnailIcon(FontAwesome.Pagelines)]
+    [AvailableContentTypes(Include = new[] { typeof(StartPage) })]
     public class StandardPage : SitePageData
     {
         [CultureSpecific]
