@@ -4,6 +4,7 @@ using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 using EPiServer.Web;
+using Geta.Epi.FontThumbnail;
 
 namespace EPiServerDemo.Models.Blocks
 {
@@ -11,6 +12,7 @@ namespace EPiServerDemo.Models.Blocks
         DisplayName = "ContactBlock",
         GUID = "5eb0056a-63d2-41c1-8c2b-13a778429bc5",
         Description = "Contact information block")]
+    [ThumbnailIcon(FontAwesome.Envelope)]
     public class ContactBlock : BlockData
     {
         [CultureSpecific]
