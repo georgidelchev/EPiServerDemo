@@ -6,7 +6,7 @@ namespace EPiServerDemo.Business.Constants
 {
     public class SiteTabNames
     {
-        [Display(Order = 10)] // to sort horizontal tabs
+        [Display(Order = 10)]
         [RequiredAccess(AccessLevel.Edit)]
         public const string SEO = "SEO";
 

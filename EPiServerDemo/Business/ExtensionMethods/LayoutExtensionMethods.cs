@@ -12,6 +12,7 @@ namespace EPiServerDemo.Business.ExtensionMethods
         {
             var loader = ServiceLocator.Current.GetInstance<IContentLoader>();
             var startPage = loader.Get<StartPage>(ContentReference.StartPage);
+
             return startPage.FooterText;
         }
     }

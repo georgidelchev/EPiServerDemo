@@ -2,10 +2,10 @@
 using EPiServer.Web.Mvc;
 using System.Web.Mvc;
 using System.Web.Security;
-using AlloyTraining.Business.ExtensionMethods;
 using EPiServer;
 using EPiServer.Core;
 using EPiServer.Filters;
+using EPiServerDemo.Business.ExtensionMethods;
 using EPiServerDemo.Models.Pages;
 using EPiServerDemo.Models.ViewModels;
 

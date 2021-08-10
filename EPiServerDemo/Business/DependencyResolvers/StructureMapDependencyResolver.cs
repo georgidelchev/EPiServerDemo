@@ -8,11 +8,12 @@ namespace EPiServerDemo.Business.DependencyResolvers
 {
     public class StructureMapDependencyResolver : IDependencyResolver
     {
-        private readonly IContainer _container;
+        private readonly IContainer container;
 
-        public StructureMapDependencyResolver(IContainer container)
+        public StructureMapDependencyResolver(
+            IContainer container)
         {
-            _container = container;
+            this.container = container;
         }
 
         public object GetService(Type serviceType)
@@ -24,18 +25,12 @@ namespace EPiServerDemo.Business.DependencyResolvers
         }
 
         public IEnumerable<object> GetServices(Type serviceType)
-        {
-            return _container.GetAllInstances(serviceType).Cast<object>();
-        }
+            => this.container.GetAllInstances(serviceType).Cast<object>();
 
         private object GetConcreteService(Type serviceType)
-        {
-            return _container.GetInstance(serviceType);
-        }
+            => this.container.GetInstance(serviceType);
 
         private object GetInterfaceService(Type serviceType)
-        {
-            return _container.TryGetInstance(serviceType);
-        }
+            => this.container.TryGetInstance(serviceType);
     }
 }

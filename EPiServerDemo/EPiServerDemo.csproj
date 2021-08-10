@@ -245,12 +245,9 @@
     <Compile Include="Business\Initialization\RegisterAdminInitializationModule.cs" />
     <Compile Include="Business\Initialization\RegisterDependencyResolverInitializationModule.cs" />
     <Compile Include="Business\SelectionFactories\ThemeSelectionFactory.cs" />
-    <Compile Include="Controllers\BlogPageController.cs" />
-    <Compile Include="Controllers\ContentFolderController.cs" />
+    <Compile Include="Controllers\LibraryPageController.cs" />
     <Compile Include="Controllers\PageControllerBase.cs" />
     <Compile Include="Controllers\StandardPagePartialController.cs" />
-    <Compile Include="Controllers\ProductPagePartialController.cs" />
-    <Compile Include="Controllers\ProductPageController.cs" />
     <Compile Include="Controllers\StandardPageController.cs" />
     <Compile Include="Controllers\StartPagePartialController.cs" />
     <Compile Include="Controllers\StartPageController.cs" />
@@ -263,12 +260,10 @@
     <Compile Include="Models\Media\ImageFile.cs" />
     <Compile Include="Models\Media\PdfFile.cs" />
     <Compile Include="Models\Media\SvgFile.cs" />
-    <Compile Include="Models\Pages\BlogPage.cs" />
-    <Compile Include="Models\Pages\ProductPage.cs" />
+    <Compile Include="Models\Pages\LibraryPage.cs" />
     <Compile Include="Models\Pages\SitePageData.cs" />
     <Compile Include="Models\Pages\StandardPage.cs" />
     <Compile Include="Models\Pages\StartPage.cs" />
-    <Compile Include="Models\ViewModels\ContentFolderViewModel.cs" />
     <Compile Include="Models\ViewModels\IPageViewModel.cs" />
     <Compile Include="Models\ViewModels\PageViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -334,14 +329,11 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\StandardPage\Index.cshtml" />
     <Content Include="Views\Shared\ContactBlock.cshtml" />
-    <Content Include="Views\ProductPage\Index.cshtml" />
-    <Content Include="Views\ProductPagePartial\Index.cshtml" />
     <Content Include="Views\Shared\ImageFile.cshtml" />
     <Content Include="Views\StandardPagePartial\Index.cshtml" />
-    <Content Include="Views\ContentFolder\Index.cshtml" />
     <Content Include="Views\StartPagePartial\Index.cshtml" />
     <Content Include="Views\Shared\BookBlock.cshtml" />
-    <Content Include="Views\BlogPage\Index.cshtml" />
+    <Content Include="Views\LibraryPage\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

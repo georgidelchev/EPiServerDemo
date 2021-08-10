@@ -6,7 +6,8 @@ namespace EPiServerDemo.Controllers
 {
     public class StartPageController : PageControllerBase<StartPage>
     {
-        public StartPageController(IContentLoader loader)
+        public StartPageController(
+            IContentLoader loader)
             : base(loader)
         {
         }

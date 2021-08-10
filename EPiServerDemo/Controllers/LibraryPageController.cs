@@ -4,15 +4,15 @@ using EPiServerDemo.Models.Pages;
 
 namespace EPiServerDemo.Controllers
 {
-    public class BlogPageController : PageControllerBase<BlogPage>
+    public class LibraryPageController : PageControllerBase<LibraryPage>
     {
-        public BlogPageController(
-            IContentLoader loader) 
+        public LibraryPageController(
+            IContentLoader loader)
             : base(loader)
         {
         }
 
-        public ActionResult Index(BlogPage currentPage)
+        public ActionResult Index(LibraryPage currentPage)
         {
             return this.View(this.CreatePageViewModel(currentPage));
         }

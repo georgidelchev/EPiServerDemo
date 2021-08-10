@@ -14,7 +14,7 @@ namespace EPiServerDemo.Models.Pages
         Description = "The home page for a website with an area for blocks and partial pages.",
         GroupName = SiteGroupNames.Specialized,
         Order = 10)]
-    [AvailableContentTypes(Include = new[] { typeof(ProductPage), typeof(StandardPage) })]
+    [AvailableContentTypes(Include = new[] { typeof(StandardPage) })]
     [ThumbnailIcon(FontAwesome.Home)]
     public class StartPage : SitePageData
     {
