@@ -3,6 +3,7 @@ using EPiServer;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
+using Geta.Epi.FontThumbnail;
 
 namespace EPiServerDemo.Models.Blocks
 {
@@ -10,6 +11,7 @@ namespace EPiServerDemo.Models.Blocks
         DisplayName = "BookBlock",
         GUID = "afdc17aa-9b7a-43a8-8145-3321a9e15c28",
         Description = "Block for creation of book.", Order = 200)]
+    [ThumbnailIcon(FontAwesome.Book)]
     public class BookBlock : BlockData
     {
         [CultureSpecific]
