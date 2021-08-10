@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
@@ -27,10 +28,11 @@ namespace EPiServerDemo.Models.Pages
         public virtual XhtmlString MainBody { get; set; }
 
         [Display(
-            Name = "Book",
+            Name = "Book1",
             GroupName = SystemTabNames.Content,
             Description = "Page Book",
             Order = 300)]
-        public virtual BookBlock Book { get; set; }
+        public virtual ContentArea Book1 { get; set; }
+
     }
 }
