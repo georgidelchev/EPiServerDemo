@@ -1,0 +1,13 @@
+﻿@using EPiServer.Web.Mvc.Html
+
+@model EPiServerDemo.Models.ViewModels.IPageViewModel<EPiServerDemo.Models.Pages.BlogPage>
+
+<div>
+    @Html.PropertyFor(m => m.CurrentPage.Heading)
+</div>
+<div>
+    @Html.PropertyFor(m => m.CurrentPage.MainBody)
+</div>
+<div>
+    @Html.PropertyFor(m => m.CurrentPage.Book)
+</div>

@@ -245,6 +245,7 @@
     <Compile Include="Business\Initialization\RegisterAdminInitializationModule.cs" />
     <Compile Include="Business\Initialization\RegisterDependencyResolverInitializationModule.cs" />
     <Compile Include="Business\SelectionFactories\ThemeSelectionFactory.cs" />
+    <Compile Include="Controllers\BlogPageController.cs" />
     <Compile Include="Controllers\ContentFolderController.cs" />
     <Compile Include="Controllers\PageControllerBase.cs" />
     <Compile Include="Controllers\StandardPagePartialController.cs" />
@@ -262,6 +263,7 @@
     <Compile Include="Models\Media\ImageFile.cs" />
     <Compile Include="Models\Media\PdfFile.cs" />
     <Compile Include="Models\Media\SvgFile.cs" />
+    <Compile Include="Models\Pages\BlogPage.cs" />
     <Compile Include="Models\Pages\ProductPage.cs" />
     <Compile Include="Models\Pages\SitePageData.cs" />
     <Compile Include="Models\Pages\StandardPage.cs" />
@@ -339,6 +341,7 @@
     <Content Include="Views\ContentFolder\Index.cshtml" />
     <Content Include="Views\StartPagePartial\Index.cshtml" />
     <Content Include="Views\Shared\BookBlock.cshtml" />
+    <Content Include="Views\BlogPage\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
